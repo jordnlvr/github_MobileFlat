@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Layout Page</title>
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- This section defines the header and footer that make up the page view or layout that will be used by views (can build others) -->
+    <!-- 0 -- MAIN LAYOUT AREA -->
+    <section data-role="layout" data-id="layout2">
+
+        <!-- 1 -- HEADER AREA -->
+        <header data-role="header">
+            <!-- Put here whatever is desired at the top of each page/view (many times a navbar)-->
+            <!-- <div data-role="navbar">My App</div> -->
+
+        </header>
+        <!-- 1 -- END OF HEADER AREA -->
+        <!------------------------------------------------------------------------------------------------------------------>
+        <!-- 2 -- VIEW AREA -->
+        <!--View content will render here-->
+        <!-- 2 -- END OF VIEW AREA -->
+        <!------------------------------------------------------------------------------------------------------------------>
+        <!-- 3 -- FOOTER AREA -->
+        <footer data-role="footer"></footer>
+        <!-- 3 -- END OF FOOTER AREA -->
+        <!------------------------------------------------------------------------------------------------------------------>
+    </section> 
+    <!-- 0 -- END OF MAIN LAYOUT AREA -->  
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!-- 4 -- VIEWS AREA -->
+
+    <!-- 5 FIRST/DEFAULT VIEW -->
+    <div id="viewA" data-role="view" data-layout="layout2">
+        Information/widgets/controls here...
+    </div>
+
+    <!-- 5 END OF FIRST/DEFAULT VIEW -->
+    <!------------------------------------------------------------------------------------------------------------------>
+
+    <!-- 4 -- END OF VIEWS AREA -->  
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+
+ 
+    <!-- 5 -- SCRIPTS/JAVASCRIPT AREA -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+    <script>
+        var app = new kendo.mobile.Application(document.body,
+        {
+            transition: 'slide'
+        });
+
+
+    </script>
+
+    <!-- 5 -- END OF SCRIPTS/JAVASCRIPT AREA -->
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+</body>
+</html>
